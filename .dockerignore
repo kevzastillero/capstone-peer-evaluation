@@ -1,0 +1,14 @@
+.env
+.env.backup
+.git
+.idea
+.phpunit.result.cache
+.vscode
+node_modules
+npm-debug.log
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+vendor
+yarn-error.log
