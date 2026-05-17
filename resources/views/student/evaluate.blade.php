@@ -10,7 +10,7 @@
         <span class="member-avatar">{{ strtoupper(substr($evaluatee->name, 0, 1)) }}</span>
         <div>
           <h1 class="h4 mb-1">Evaluate {{ $evaluatee->name }}</h1>
-          <div class="text-secondary">{{ $evaluatee->student_id }}</div>
+          <div class="text-secondary">Team member evaluation</div>
         </div>
       </div>
       <a href="{{ route('student.dashboard') }}" class="btn btn-outline-secondary d-none d-sm-inline-flex"><i data-lucide="arrow-left" class="icon"></i>Back</a>

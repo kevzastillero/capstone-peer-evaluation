@@ -779,6 +779,14 @@
 
       .auth-role .icon { color: var(--maroon); }
 
+      .site-footer {
+        padding: 1rem;
+        border-top: 1px solid var(--line);
+        background: #fff;
+        color: var(--muted);
+        font-size: .9rem;
+      }
+
       .landing-page {
         background: #fff;
       }
@@ -911,6 +919,9 @@
 
       @media (max-width: 991.98px) {
         .app-shell { display: block !important; }
+        .site-footer {
+          text-align: center;
+        }
         .sidebar {
           position: sticky;
           z-index: 1020;
@@ -1073,6 +1084,12 @@
 
       @yield('content')
     </main>
+    <footer class="site-footer">
+      <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span>Peer Evaluation System</span>
+        <span>&copy; {{ date('Y') }} Kevin C. Astillero. All rights reserved.</span>
+      </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>

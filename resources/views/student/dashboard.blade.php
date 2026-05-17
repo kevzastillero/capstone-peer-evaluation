@@ -90,7 +90,7 @@
               <span class="member-avatar">{{ strtoupper(substr($member->name, 0, 1)) }}</span>
               <div>
                 <div class="fw-semibold">{{ $member->name }}</div>
-                <div class="small text-secondary">{{ $member->student_id }}</div>
+                <div class="small text-secondary">{{ $student->projectGroup ? 'Group ' . $student->projectGroup->number : 'Team member' }}</div>
               </div>
             </div>
             <div class="d-flex align-items-center gap-2">
